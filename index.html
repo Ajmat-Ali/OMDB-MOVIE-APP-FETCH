@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>omdbapi.com</title>
+    <style>
+      h1,
+      form {
+        text-align: center;
+      }
+      form {
+        margin-top: 50px;
+      }
+      #searchMovie {
+        margin-right: 20px;
+        padding: 7px;
+      }
+      #searchBtn {
+        border: none;
+        padding: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: rgb(35, 34, 34);
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #container {
+        /* border: 2px solid red; */
+        width: 70%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #card {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        padding: 20px;
+        text-align: center;
+        width: 50%;
+      }
+      #card img {
+        width: 100%;
+        height: 400px;
+      }
+      #card .title {
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 3px;
+      }
+      #card .actor {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(11, 101, 157);
+        word-spacing: 5px;
+      }
+      #card #release-duration {
+        /* border: 2px solid red; */
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(1, 134, 94);
+        margin-bottom: 10px;
+      }
+      #card #release-duration span {
+        margin-right: 25px;
+      }
+      #card .award > p:first-child {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #card .award > p:first-child+p{
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Search Movies</h1>
+    <form action="#">
+      <input type="text" name="" id="searchMovie" placeholder="Search Movies" />
+      <input type="submit" name="" id="searchBtn" />
+    </form>
+    <div id="container"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
